@@ -1,4 +1,4 @@
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/ClxXDfvtoj0/0.jpg)](https://www.youtube.com/watch?v=ClxXDfvtoj0)
+[![Billy Idol: Sweet Sixteen](http://romainl.github.io/vim-sweet16/images/sweet16.png)](https://www.youtube.com/watch?v=ClxXDfvtoj0)
 
 # vim-sweet16
 
