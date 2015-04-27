@@ -41,10 +41,10 @@ if &t_Co >= 256 || has('gui_running')
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Visual ctermbg=14 ctermfg=0 cterm=NONE guibg=#00ffff guifg=#000000 gui=NONE
     hi VisualNOS ctermbg=6 ctermfg=0 cterm=NONE guibg=#008080 guifg=#000000 gui=NONE
-    hi Pmenu ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
-    hi PmenuSbar ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
-    hi PmenuSel ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
-    hi PmenuThumb ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
+    hi Pmenu ctermbg=7 ctermfg=0 cterm=NONE guibg=#c0c0c0 guifg=#000000 gui=NONE
+    hi PmenuSbar ctermbg=8 ctermfg=0 cterm=NONE guibg=#808080 guifg=#000000 gui=NONE
+    hi PmenuSel ctermbg=8 ctermfg=15 cterm=NONE guibg=#808080 guifg=#ffffff gui=NONE
+    hi PmenuThumb ctermbg=0 ctermfg=0 cterm=NONE guibg=#000000 guifg=#000000 gui=NONE
     hi FoldColumn ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi Folded ctermbg=7 ctermfg=0 cterm=NONE guibg=#c0c0c0 guifg=#000000 gui=NONE
     hi WildMenu ctermbg=11 ctermfg=0 cterm=NONE guibg=#ffff00 guifg=#000000 gui=NONE
@@ -103,10 +103,10 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE
     hi Visual ctermbg=14 ctermfg=0 cterm=NONE
     hi VisualNOS ctermbg=6 ctermfg=0 cterm=NONE
-    hi Pmenu ctermbg=15 ctermfg=0 cterm=NONE
-    hi PmenuSbar ctermbg=15 ctermfg=0 cterm=NONE
-    hi PmenuSel ctermbg=15 ctermfg=0 cterm=NONE
-    hi PmenuThumb ctermbg=15 ctermfg=0 cterm=NONE
+    hi Pmenu ctermbg=7 ctermfg=0 cterm=NONE
+    hi PmenuSbar ctermbg=8 ctermfg=0 cterm=NONE
+    hi PmenuSel ctermbg=8 ctermfg=15 cterm=NONE
+    hi PmenuThumb ctermbg=0 ctermfg=0 cterm=NONE
     hi FoldColumn ctermbg=NONE ctermfg=8 cterm=NONE
     hi Folded ctermbg=7 ctermfg=0 cterm=NONE
     hi WildMenu ctermbg=11 ctermfg=0 cterm=NONE
