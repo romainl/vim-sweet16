@@ -26,17 +26,17 @@ if &t_Co >= 256 || has('gui_running')
     hi Type ctermbg=NONE ctermfg=5 cterm=NONE guibg=NONE guifg=#800080 gui=NONE
     hi Underlined ctermbg=NONE ctermfg=15 cterm=underline guibg=NONE guifg=#ffffff gui=underline
     hi StatusLine ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
-    hi StatusLineNC ctermbg=8 ctermfg=7 cterm=NONE guibg=#808080 guifg=#c0c0c0 gui=NONE
+    hi StatusLineNC ctermbg=8 ctermfg=15 cterm=NONE guibg=#808080 guifg=#ffffff gui=NONE
     hi VertSplit ctermbg=8 ctermfg=8 cterm=NONE guibg=#808080 guifg=#808080 gui=NONE
-    hi TabLine ctermbg=8 ctermfg=7 cterm=NONE guibg=#808080 guifg=#c0c0c0 gui=NONE
+    hi TabLine ctermbg=8 ctermfg=15 cterm=NONE guibg=#808080 guifg=#ffffff gui=NONE
     hi TabLineFill ctermbg=8 ctermfg=8 cterm=NONE guibg=#808080 guifg=#808080 gui=NONE
     hi TabLineSel ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi Title ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#ff00ff gui=NONE
     hi LineNr ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
-    hi Cursor ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
+    hi Cursor ctermbg=10 ctermfg=0 cterm=NONE guibg=#00ff00 guifg=#000000 gui=NONE
     hi CursorColumn ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
-    hi CursorLine ctermbg=11 ctermfg=NONE cterm=NONE guibg=#ffff00 guifg=NONE gui=NONE
-    hi CursorLineNr ctermbg=11 ctermfg=NONE cterm=NONE guibg=#ffff00 guifg=NONE gui=NONE
+    hi CursorLine ctermbg=7 ctermfg=NONE cterm=NONE guibg=#c0c0c0 guifg=NONE gui=NONE
+    hi CursorLineNr ctermbg=7 ctermfg=NONE cterm=NONE guibg=#c0c0c0 guifg=NONE gui=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Visual ctermbg=14 ctermfg=0 cterm=NONE guibg=#00ffff guifg=#000000 gui=NONE
@@ -46,7 +46,7 @@ if &t_Co >= 256 || has('gui_running')
     hi PmenuSel ctermbg=8 ctermfg=15 cterm=NONE guibg=#808080 guifg=#ffffff gui=NONE
     hi PmenuThumb ctermbg=0 ctermfg=0 cterm=NONE guibg=#000000 guifg=#000000 gui=NONE
     hi FoldColumn ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
-    hi Folded ctermbg=7 ctermfg=0 cterm=NONE guibg=#c0c0c0 guifg=#000000 gui=NONE
+    hi Folded ctermbg=6 ctermfg=15 cterm=NONE guibg=#008080 guifg=#ffffff gui=NONE
     hi WildMenu ctermbg=11 ctermfg=0 cterm=NONE guibg=#ffff00 guifg=#000000 gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=7 cterm=NONE guibg=NONE guifg=#c0c0c0 gui=NONE
     hi DiffAdd ctermbg=2 ctermfg=0 cterm=NONE guibg=#008000 guifg=#000000 gui=NONE
@@ -54,9 +54,9 @@ if &t_Co >= 256 || has('gui_running')
     hi DiffDelete ctermbg=1 ctermfg=0 cterm=NONE guibg=#800000 guifg=#000000 gui=NONE
     hi DiffText ctermbg=14 ctermfg=0 cterm=NONE guibg=#00ffff guifg=#000000 gui=NONE
     hi IncSearch ctermbg=15 ctermfg=13 cterm=reverse guibg=#ffffff guifg=#ff00ff gui=reverse
-    hi Search ctermbg=10 ctermfg=0 cterm=NONE guibg=#00ff00 guifg=#000000 gui=NONE
+    hi Search ctermbg=11 ctermfg=0 cterm=NONE guibg=#ffff00 guifg=#000000 gui=NONE
     hi Directory ctermbg=NONE ctermfg=4 cterm=NONE guibg=NONE guifg=#000080 gui=NONE
-    hi MatchParen ctermbg=14 ctermfg=0 cterm=NONE guibg=#00ffff guifg=#000000 gui=NONE
+    hi MatchParen ctermbg=13 ctermfg=0 cterm=NONE guibg=#ff00ff guifg=#000000 gui=NONE
     hi SpellBad ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#ff0000 gui=NONE guisp=#ff0000
     hi SpellCap ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#0000ff gui=NONE guisp=#0000ff
     hi SpellLocal ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#ff00ff gui=NONE guisp=#ff00ff
@@ -88,17 +88,17 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Type ctermbg=NONE ctermfg=5 cterm=NONE
     hi Underlined ctermbg=NONE ctermfg=15 cterm=underline
     hi StatusLine ctermbg=0 ctermfg=15 cterm=NONE
-    hi StatusLineNC ctermbg=8 ctermfg=7 cterm=NONE
+    hi StatusLineNC ctermbg=8 ctermfg=15 cterm=NONE
     hi VertSplit ctermbg=8 ctermfg=8 cterm=NONE
-    hi TabLine ctermbg=8 ctermfg=7 cterm=NONE
+    hi TabLine ctermbg=8 ctermfg=15 cterm=NONE
     hi TabLineFill ctermbg=8 ctermfg=8 cterm=NONE
     hi TabLineSel ctermbg=0 ctermfg=15 cterm=NONE
     hi Title ctermbg=NONE ctermfg=13 cterm=NONE
     hi LineNr ctermbg=NONE ctermfg=8 cterm=NONE
-    hi Cursor ctermbg=15 ctermfg=0 cterm=NONE
+    hi Cursor ctermbg=10 ctermfg=0 cterm=NONE
     hi CursorColumn ctermbg=15 ctermfg=0 cterm=NONE
-    hi CursorLine ctermbg=11 ctermfg=NONE cterm=NONE
-    hi CursorLineNr ctermbg=11 ctermfg=NONE cterm=NONE
+    hi CursorLine ctermbg=7 ctermfg=NONE cterm=NONE
+    hi CursorLineNr ctermbg=7 ctermfg=NONE cterm=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE
     hi Visual ctermbg=14 ctermfg=0 cterm=NONE
@@ -108,7 +108,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi PmenuSel ctermbg=8 ctermfg=15 cterm=NONE
     hi PmenuThumb ctermbg=0 ctermfg=0 cterm=NONE
     hi FoldColumn ctermbg=NONE ctermfg=8 cterm=NONE
-    hi Folded ctermbg=7 ctermfg=0 cterm=NONE
+    hi Folded ctermbg=6 ctermfg=15 cterm=NONE
     hi WildMenu ctermbg=11 ctermfg=0 cterm=NONE
     hi SpecialKey ctermbg=NONE ctermfg=7 cterm=NONE
     hi DiffAdd ctermbg=2 ctermfg=0 cterm=NONE
@@ -116,9 +116,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi DiffDelete ctermbg=1 ctermfg=0 cterm=NONE
     hi DiffText ctermbg=14 ctermfg=0 cterm=NONE
     hi IncSearch ctermbg=15 ctermfg=13 cterm=reverse
-    hi Search ctermbg=10 ctermfg=0 cterm=NONE
+    hi Search ctermbg=11 ctermfg=0 cterm=NONE
     hi Directory ctermbg=NONE ctermfg=4 cterm=NONE
-    hi MatchParen ctermbg=14 ctermfg=0 cterm=NONE
+    hi MatchParen ctermbg=13 ctermfg=0 cterm=NONE
     hi SpellBad ctermbg=NONE ctermfg=9 cterm=NONE
     hi SpellCap ctermbg=NONE ctermfg=12 cterm=NONE
     hi SpellLocal ctermbg=NONE ctermfg=13 cterm=NONE

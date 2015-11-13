@@ -94,20 +94,20 @@
         [ "Underlined", "NONE", white, "underline" ],
 
         [ "StatusLine", black, white, "NONE" ],
-        [ "StatusLineNC", gray, darkwhite, "NONE" ],
+        [ "StatusLineNC", gray, white, "NONE" ],
         [ "VertSplit", gray, gray, "NONE" ],
 
-        [ "TabLine", gray, darkwhite, "NONE" ],
+        [ "TabLine", gray, white, "NONE" ],
         [ "TabLineFill", gray, gray, "NONE" ],
         [ "TabLineSel", black, white, "NONE" ],
 
         [ "Title", "NONE", magenta, "NONE" ],
         [ "LineNr", "NONE", gray, "NONE" ],
 
-        [ "Cursor", white, black, "NONE" ],
+        [ "Cursor", green, black, "NONE" ],
         [ "CursorColumn", white, black, "NONE" ],
-        [ "CursorLine", yellow, "NONE", "NONE" ],
-        [ "CursorLineNr", yellow, "NONE", "NONE" ],
+        [ "CursorLine", darkwhite, "NONE", "NONE" ],
+        [ "CursorLineNr", darkwhite, "NONE", "NONE" ],
 
         [ "helpLeadBlank", "NONE", "NONE", "NONE" ],
         [ "helpNormal", "NONE", "NONE", "NONE" ],
@@ -121,7 +121,7 @@
         [ "PmenuThumb", black, black, "NONE" ],
 
         [ "FoldColumn", "NONE", gray, "NONE" ],
-        [ "Folded", darkwhite, black, "NONE" ],
+        [ "Folded", darkcyan, white, "NONE" ],
 
         [ "WildMenu", yellow, black, "NONE" ],
         [ "SpecialKey", "NONE", darkwhite, "NONE" ],
@@ -132,10 +132,10 @@
         [ "DiffText", cyan, black, "NONE" ],
 
         [ "IncSearch", white, magenta, "reverse" ],
-        [ "Search", green, black, "NONE" ],
+        [ "Search", yellow, black, "NONE" ],
 
         [ "Directory", "NONE", darkblue, "NONE" ],
-        [ "MatchParen", cyan, black, "NONE" ],
+        [ "MatchParen", magenta, black, "NONE" ],
 
         [ "SpellBad", "NONE", red, "NONE", red ],
         [ "SpellCap", "NONE", blue, "NONE", blue ],
@@ -158,7 +158,7 @@
     #     $ erb -T - bar.erb > bar.vim
     #
     # From Vim:
-    #     :!erb -T - % > bar.vim
+    #     :!erb -T - % > %:r.vim
 
     # These online resources can help you design your colorscheme:
     #   * http://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg
