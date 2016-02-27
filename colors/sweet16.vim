@@ -1,17 +1,19 @@
 " sweet16.vim -- Vim color scheme.
 " Author:      Romain Lafourcade (romainlafourcade@gmail.com)
+" Webpage:     http://www.example.com
 " Description: A 'light' colorscheme using exclusively the lower 16 colors of the xterm palette.
 
 hi clear
 
-if exists('syntax_on')
+if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = 'sweet16'
+let colors_name = "sweet16"
 
-if &t_Co >= 256 || has('gui_running')
+if &t_Co >= 256 || has("gui_running")
     hi Normal ctermbg=white ctermfg=0 cterm=NONE guibg=white guifg=#000000 gui=NONE
+    set background=light
     hi NonText ctermbg=NONE ctermfg=7 cterm=NONE guibg=NONE guifg=#c0c0c0 gui=NONE
     hi Comment ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi Constant ctermbg=NONE ctermfg=1 cterm=NONE guibg=NONE guifg=#800000 gui=NONE
@@ -68,12 +70,10 @@ if &t_Co >= 256 || has('gui_running')
     hi MoreMsg ctermbg=12 ctermfg=15 cterm=NONE guibg=#0000ff guifg=#ffffff gui=NONE
     hi Question ctermbg=15 ctermfg=12 cterm=NONE guibg=#ffffff guifg=#0000ff gui=NONE
     hi WarningMsg ctermbg=13 ctermfg=15 cterm=NONE guibg=#ff00ff guifg=#ffffff gui=NONE
-
-    set background=light
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
-
     hi Normal ctermbg=white ctermfg=black cterm=NONE
+    set background=light
     hi NonText ctermbg=NONE ctermfg=darkwhite cterm=NONE
     hi Comment ctermbg=NONE ctermfg=gray cterm=NONE
     hi Constant ctermbg=NONE ctermfg=darkred cterm=NONE
@@ -130,8 +130,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi MoreMsg ctermbg=blue ctermfg=white cterm=NONE
     hi Question ctermbg=white ctermfg=blue cterm=NONE
     hi WarningMsg ctermbg=magenta ctermfg=white cterm=NONE
-
-    set background=light
 endif
 
 " Generated with RNB (https://gist.github.com/romainl/5cd2f4ec222805f49eca)
