@@ -37,8 +37,8 @@ if &t_Co >= 256 || has("gui_running")
     hi LineNr ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi Cursor ctermbg=10 ctermfg=0 cterm=NONE guibg=#00ff00 guifg=#000000 gui=NONE
     hi CursorColumn ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
-    hi CursorLine ctermbg=7 ctermfg=NONE cterm=NONE guibg=#c0c0c0 guifg=NONE gui=NONE
-    hi CursorLineNr ctermbg=7 ctermfg=NONE cterm=NONE guibg=#c0c0c0 guifg=NONE gui=NONE
+    hi CursorLine ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
+    hi CursorLineNr ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Visual ctermbg=14 ctermfg=0 cterm=NONE guibg=#00ffff guifg=#000000 gui=NONE
@@ -74,8 +74,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
     hi Normal ctermbg=white ctermfg=black cterm=NONE
     set background=light
-    hi NonText ctermbg=NONE ctermfg=darkwhite cterm=NONE
-    hi Comment ctermbg=NONE ctermfg=gray cterm=NONE
+    hi NonText ctermbg=NONE ctermfg=gray cterm=NONE
+    hi Comment ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Constant ctermbg=NONE ctermfg=darkred cterm=NONE
     hi Error ctermbg=white ctermfg=red cterm=reverse
     hi Identifier ctermbg=NONE ctermfg=darkyellow cterm=NONE
@@ -88,29 +88,29 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Type ctermbg=NONE ctermfg=darkmagenta cterm=NONE
     hi Underlined ctermbg=NONE ctermfg=white cterm=underline
     hi StatusLine ctermbg=black ctermfg=white cterm=NONE
-    hi StatusLineNC ctermbg=gray ctermfg=white cterm=NONE
-    hi VertSplit ctermbg=gray ctermfg=gray cterm=NONE
-    hi TabLine ctermbg=gray ctermfg=white cterm=NONE
-    hi TabLineFill ctermbg=gray ctermfg=gray cterm=NONE
+    hi StatusLineNC ctermbg=darkgray ctermfg=white cterm=NONE
+    hi VertSplit ctermbg=darkgray ctermfg=darkgray cterm=NONE
+    hi TabLine ctermbg=darkgray ctermfg=white cterm=NONE
+    hi TabLineFill ctermbg=darkgray ctermfg=darkgray cterm=NONE
     hi TabLineSel ctermbg=black ctermfg=white cterm=NONE
     hi Title ctermbg=NONE ctermfg=magenta cterm=NONE
-    hi LineNr ctermbg=NONE ctermfg=gray cterm=NONE
+    hi LineNr ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Cursor ctermbg=green ctermfg=black cterm=NONE
     hi CursorColumn ctermbg=white ctermfg=black cterm=NONE
-    hi CursorLine ctermbg=darkwhite ctermfg=NONE cterm=NONE
-    hi CursorLineNr ctermbg=darkwhite ctermfg=NONE cterm=NONE
+    hi CursorLine ctermbg=NONE ctermfg=NONE cterm=NONE
+    hi CursorLineNr ctermbg=NONE ctermfg=NONE cterm=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=NONE cterm=NONE
     hi helpNormal ctermbg=NONE ctermfg=NONE cterm=NONE
     hi Visual ctermbg=cyan ctermfg=black cterm=NONE
     hi VisualNOS ctermbg=darkcyan ctermfg=black cterm=NONE
-    hi Pmenu ctermbg=darkwhite ctermfg=black cterm=NONE
-    hi PmenuSbar ctermbg=gray ctermfg=black cterm=NONE
-    hi PmenuSel ctermbg=gray ctermfg=white cterm=NONE
+    hi Pmenu ctermbg=gray ctermfg=black cterm=NONE
+    hi PmenuSbar ctermbg=darkgray ctermfg=black cterm=NONE
+    hi PmenuSel ctermbg=darkgray ctermfg=white cterm=NONE
     hi PmenuThumb ctermbg=black ctermfg=black cterm=NONE
-    hi FoldColumn ctermbg=NONE ctermfg=gray cterm=NONE
+    hi FoldColumn ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Folded ctermbg=darkcyan ctermfg=white cterm=NONE
     hi WildMenu ctermbg=yellow ctermfg=black cterm=NONE
-    hi SpecialKey ctermbg=NONE ctermfg=darkwhite cterm=NONE
+    hi SpecialKey ctermbg=NONE ctermfg=gray cterm=NONE
     hi DiffAdd ctermbg=darkgreen ctermfg=black cterm=NONE
     hi DiffChange ctermbg=darkcyan ctermfg=black cterm=NONE
     hi DiffDelete ctermbg=darkred ctermfg=black cterm=NONE
@@ -123,8 +123,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SpellCap ctermbg=NONE ctermfg=blue cterm=NONE
     hi SpellLocal ctermbg=NONE ctermfg=magenta cterm=NONE
     hi SpellRare ctermbg=NONE ctermfg=cyan cterm=NONE
-    hi ColorColumn ctermbg=darkwhite ctermfg=NONE cterm=NONE
-    hi signColumn ctermbg=NONE ctermfg=gray cterm=NONE
+    hi ColorColumn ctermbg=gray ctermfg=NONE cterm=NONE
+    hi signColumn ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi ErrorMsg ctermbg=red ctermfg=white cterm=NONE
     hi ModeMsg ctermbg=green ctermfg=black cterm=NONE
     hi MoreMsg ctermbg=blue ctermfg=white cterm=NONE
